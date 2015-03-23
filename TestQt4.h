@@ -2,8 +2,8 @@
 #define TestQt4_h
 
 #include "ui_TestQt4.h"
-#include "myWidget.h"
-#include "myWidget2.h"
+#include "ui_widget.h"
+#include "ui_widget2.h"
 
 class TestQt4 :public QMainWindow, public Ui::MainWindow
 {
@@ -14,8 +14,8 @@ class TestQt4 :public QMainWindow, public Ui::MainWindow
    void slotExit();
    void changeForm(bool);
   private:
-   myWidget *myForm ;
-   myWidget2 *myForm2 ;
+   Ui::myWidget *myForm ;
+   Ui::Form *myForm2 ;
 };
 
 #endif

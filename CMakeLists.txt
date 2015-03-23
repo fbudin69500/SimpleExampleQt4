@@ -13,13 +13,11 @@ INCLUDE_DIRECTORIES(
 )
 
 QT4_WRAP_CPP(MOC_FILES TestQt4.h)
-QT4_WRAP_CPP(MOC_FILES_myWidget myWidget.h)
-QT4_WRAP_CPP(MOC_FILES_myWidget2 myWidget2.h)
 QT4_WRAP_UI(UI_FILES TestQt4.ui)
 QT4_WRAP_UI(UI_FILES2 widget.ui)
 QT4_WRAP_UI(UI_FILES3 widget2.ui)
 
-set(TestQt4_SOURCE main.cxx TestQt4.cxx ${MOC_FILES} ${UI_FILES} ${UI_FILES2} ${UI_FILES3} ${MOC_FILES_myWidget} myWidget.cxx ${MOC_FILES_myWidget2} myWidget2.cxx)
+set(TestQt4_SOURCE main.cxx TestQt4.cxx ${MOC_FILES} ${UI_FILES} ${UI_FILES2} ${UI_FILES3})
 
 add_executable( TestQt4 ${TestQt4_SOURCE})
 target_link_libraries(TestQt4 ${QT_LIBRARIES})
