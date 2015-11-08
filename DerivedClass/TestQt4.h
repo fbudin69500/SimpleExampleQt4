@@ -2,6 +2,9 @@
 #define TestQt4_h
 
 #include "ui_TestQt4.h"
+#include "qcheckbox.h"
+#include <QDoubleSpinBox>
+#include "qlabel.h"
 
 class TestQt4 :public QMainWindow, public Ui::MainWindow
 {

@@ -9,5 +9,12 @@ TestQt4::TestQt4(QWidget * parent , Qt::WFlags f  ): QMainWindow(parent, f)
 
 void TestQt4::slotExit()
 {
-  qApp->exit();
+//  qApp->exit();
+QHBoxLayout *hlayout = new QHBoxLayout ;
+QLabel *label = new QLabel();
+label->setText("Test") ;
+hlayout->addWidget(label);
+QDoubleSpinBox *spin=new QDoubleSpinBox ;
+hlayout->addWidget(spin);
+verticalLayout->addLayout(hlayout);
 }
